@@ -59,22 +59,22 @@ if(playerInput == '3'){
 printMessage('Twój ruch to: ' + argPlayerMove);
 
 function displayResult (argComputerMove, argPlayerMove) {
-  if (argComputerMove == 'kamień' && argPlayerMove == 'papier'){
+  if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
     return 'Ty wygrywasz!';
   }
-  if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
+  if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
     return 'Ty przegrywasz!';
   }
-  if (argComputerMove == 'papier' && argPlayerMove == 'kamień'){
+  if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
     return 'Ty przegrywasz!';
   }
-  if (argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
+  if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
     return 'Ty wygrywasz!';
   }
-  if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
+  if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
     return 'Ty przegrywasz!';
   }
-  if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
+  if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
     return 'Ty wygrywasz!';
   }
   if (argComputerMove == argPlayerMove){
@@ -85,4 +85,4 @@ function displayResult (argComputerMove, argPlayerMove) {
   }
 }
 
-printMessage('wynik: ' + displayResult);
+printMessage('wynik: ' + displayResult(argComputerMove, argPlayerMove));
